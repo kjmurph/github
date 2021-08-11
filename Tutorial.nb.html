@@ -1767,12 +1767,40 @@ summary {
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
-<p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNldGhpczo6Y3JlYXRlX2dpdGh1Yl90b2tlbigpXG5cbmBgYCJ9 -->
+<pre class="r"><code>usethis::create_github_token()
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoi4oCiIENhbGwgYGdpdGNyZWRzOjpnaXRjcmVkc19zZXQoKWAgdG8gcmVnaXN0ZXIgdGhpcyB0b2tlbiBpbiB0aGUgbG9jYWwgR2l0IGNyZWRlbnRpYWwgc3RvcmVcbiAgSXQgaXMgYWxzbyBhIGdyZWF0IGlkZWEgdG8gc3RvcmUgdGhpcyB0b2tlbiBpbiBhbnkgcGFzc3dvcmQtbWFuYWdlbWVudCBzb2Z0d2FyZSB0aGF0IHlvdSB1c2VcbuKckyBPcGVuaW5nIFVSTCAnaHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3Rva2Vucy9uZXc/c2NvcGVzPXJlcG8sdXNlcixnaXN0LHdvcmtmbG93JmRlc2NyaXB0aW9uPVI6R0lUSFVCX1BBVCdcbiJ9 -->
+<pre><code>• Call `gitcreds::gitcreds_set()` to register this token in the local Git credential store
+  It is also a great idea to store this token in any password-management software that you use
+✓ Opening URL &#39;https://github.com/settings/tokens/new?scopes=repo,user,gist,workflow&amp;description=R:GITHUB_PAT&#39;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2l0Y3JlZHM6OmdpdGNyZWRzX3NldCgpXG5gYGAifQ== -->
+<pre class="r"><code>gitcreds::gitcreds_set()</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNldGhpczo6dXNlX2dpdGh1YigpXG5cbmBgYCJ9 -->
+<pre class="r"><code>usethis::use_github()
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoi4oS5IERlZmF1bHRpbmcgdG8gJ2h0dHBzJyBHaXQgcHJvdG9jb2xcbuKckyBTZXR0aW5nIGFjdGl2ZSBwcm9qZWN0IHRvICcvaG9tZXZvbC9raWVyYW5zby9SL2dpdGh1YidcbuKckyBDaGVja2luZyB0aGF0IGN1cnJlbnQgYnJhbmNoIGlzIGRlZmF1bHQgYnJhbmNoICgnbWFzdGVyJylcbiJ9 -->
+<pre><code>ℹ Defaulting to &#39;https&#39; Git protocol
+✓ Setting active project to &#39;/homevol/kieranso/R/github&#39;
+✓ Checking that current branch is default branch (&#39;master&#39;)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIAoKYGBge3J9CnVzZXRoaXM6OmVkaXRfZ2l0X2NvbmZpZygpCmBgYAoKQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLgoKV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuCgpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIAoKYGBge3J9CnVzZXRoaXM6OmVkaXRfZ2l0X2NvbmZpZygpCmBgYAoKCgoKYGBge3J9CnVzZXRoaXM6OmNyZWF0ZV9naXRodWJfdG9rZW4oKQpgYGAKYGBge3J9CmdpdGNyZWRzOjpnaXRjcmVkc19zZXQoKQpgYGAKCgoKYGBge3J9CnVzZXRoaXM6OnVzZV9naXRodWIoKQpgYGAKCg==</div>
 
 
 
